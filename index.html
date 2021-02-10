@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) {
+        slideIndex = 1
+      }
+      if (n < 1) {
+        slideIndex = slides.length
+      }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+      captionText.innerHTML = dots[slideIndex - 1].alt;
+    }
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home - Fit for Fun Fitness Club</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Rancho&display=swap" rel="stylesheet">
+</head>
+
+<body class="images">
+  <img class="left" src="left.png" alt="left">
+  <img class="right" src="right.png" alt="right">
+  <header>
+    <a class="logo" href="index.html">Fit for Fun Fitness Club</a>
+    <div class="containerh">
+      <nav>
+        <ul>
+          <li><a class="page" href="index.html">Home</a></li>
+          <li><a class="page" href="classes.html">Classes</a></li>
+          <li><a class="page" href="info.html">Class Registration</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="containerp">
+    <div class="mySlides">
+      <img src="facility1.png" alt="" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <img src="facility2.jpg" alt="" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <img src="facility3.jpg" alt="" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <img src="facility4.jpg" alt="" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <img src="facility5.jpg" alt="" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <img src="facility6.jpg" alt="" style="width:100%">
+    </div>
+
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <div class="row">
+      <div class="column">
+        <img class="demo cursor" src="facility1.png" style="width:100%" onclick="currentSlide(1)" alt="">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="facility2.jpg" style="width:100%" onclick="currentSlide(2)" alt="">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="facility3.jpg" style="width:100%" onclick="currentSlide(3)" alt="">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="facility4.jpg" style="width:100%" onclick="currentSlide(4)" alt="">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="facility5.jpg" style="width:100%" onclick="currentSlide(5)" alt="">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="facility6.jpg" style="width:100%" onclick="currentSlide(6)" alt="">
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <p>Site Created and Edited by Chauntel Atchley Cully © 2021</p> <!-- I decided to have my copyright underneath the footer with a lightgrey color to not stand out as much -->
+  </footer>
+</body>
+
+</html>

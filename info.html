@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Class Registration - Fit for Fun Fitness Club</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Rancho&display=swap" rel="stylesheet">
+</head>
+
+<body class="crfb">
+  <form method="get" action="thankyou.html">
+    <img class="left" src="left.png" alt="left">
+    <img class="right" src="right.png" alt="right">
+    <header>
+      <a class="logo" href="index.html">Fit for Fun Fitness Club</a>
+      <div class="containerh" style="width:100%">
+        <nav>
+          <ul>
+            <li><a class="page" href="index.html">Home</a></li>
+            <li><a class="page" href="classes.html">Classes</a></li>
+            <li><a class="page" href="info.html">Class Registration</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="container">
+      <h2 class="crfh2">Class Registration Form!</h2>
+      <fieldset>
+        <legend>
+          Contact Information
+        </legend>
+        <label class="clmn" for="fname">
+          First Name:
+          <input class="clmn" autofocus type="text" name="fname" id="fname" required placeholder="First Name" />
+        </label>
+        <label class="clmn" for="lname">
+          Last Name:
+          <input class="clmn" type="text" name="lname" id="lname" required placeholder="Last Name" />
+        </label>
+        <label class="clmn" for="email">
+          Email:
+          <input class="clmn" type="email" name="email" id="email" required placeholder="Email" />
+        </label>
+        <label class="clmn" for="phone">
+          Phone:
+          <input class="clmn" type="text" name="phone" id="phone" required placeholder="Phone" />
+        </label>
+        <label class="clmn" for="address">
+          Home Address:
+          <input class="clmn" type="text" name="address" id="address" required placeholder="Address" />
+        </label>
+      </fieldset>
+    </div>
+    <div class="container">
+      <!-- This is how the user wants to be contacted -->
+      <fieldset>
+        <legend>
+          Best Form of Contact
+        </legend>
+        <select name="contactchoice" id="contactchoice">
+          <option value="Select">Select</option>
+          <option value="Email">Email</option>
+          <option value="Phone">Phone</option>
+          <option value="Text/SMS">Text/SMS</option>
+          <option value="Snail Mail">Snail Mail</option>
+        </select>
+      </fieldset>
+    </div> <!-- End on how the user wants to be contacted -->
+    <div class="container">
+      <fieldset>
+        <legend>
+          Class Reservation Request
+        </legend>
+        <input type="checkbox" id="class1" name="class1" value="Cross Training">
+        <label for="class1">Cross Training</label>
+        <input type="checkbox" id="class2" name="class2" value="Sprint">
+        <label for="class2">Sprint</label>
+        <input type="checkbox" id="class3" name="class3" value="Spin">
+        <label for="class3">Spin</label>
+        <input type="checkbox" id="class4" name="class4" value="BodyPump">
+        <label for="class4">BodyPump</label>
+        <input type="checkbox" id="class5" name="class5" value="BodyCombat">
+        <label for="class5">BodyCombat</label>
+        <input type="checkbox" id="class6" name="class6" value="Step Interval">
+        <label for="class6">Step Interval</label>
+        <input type="checkbox" id="class7" name="class7" value="Advanced Cross Training">
+        <label for="class7">Advanced Cross Training</label>
+        <input type="checkbox" id="class8" name="class8" value="MixxedFIT">
+        <label for="class8">MixxedFIT</label>
+        <input type="checkbox" id="class9" name="class9" value="Zumba">
+        <label for="class9">Zumba</label>
+      </fieldset>
+    </div>
+    <div class="container">
+      <fieldset>
+        <legend>
+          Preferred Class Time
+        </legend>
+        <input type="radio" id="AM" required name="time" value="AM">
+        <label for="AM">AM</label>
+        <input type="radio" id="PM" required name="time" value="PM">
+        <label for="PM">PM</label>
+      </fieldset>
+    </div>
+    <div class="container">
+      <fieldset>
+        <legend>
+          Additional Info
+        </legend>
+        <textarea id="additionalinfo" name="additionalinfo" rows="5" cols="50" required placeholder="Additional Info..."></textarea>
+      </fieldset>
+    </div>
+    <div class="container">
+      <input class="submit" type="submit" value="Submit" />
+    </div>
+  </form>
+  <footer class="footer">
+    <p>Site Created and Edited by Chauntel Atchley Cully © 2021</p> <!-- I decided to have my copyright underneath the footer with a lightgrey color to not stand out as much -->
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,307 @@
+@charset "UTF-8";
+
+/* Lab: Registration Form
+   Author: Chauntel Atchley Cully
+   Date: 02/07/2021
+*/
+
+/* STYLE OF ALL PAGES */
+@font-face {
+  font-family: 'Rancho', cursive;
+}
+
+html {
+  height: 100%;
+  font-size: 14px;
+  background-color: #93D8E3;
+}
+
+img.left {
+  width: 150px;
+  height: 150px;
+  float: left;
+  margin-left: 275px;
+}
+
+img.right {
+  width: 200px;
+  height: 200px;
+  float: right;
+  margin-right: 250px;
+  margin-top: -1%;
+}
+
+.footer > p {
+  width: 100%;
+  padding-top: .5em;
+  clear: both;
+  font-size: .7em;
+  text-align: center;
+  color: darkgrey;
+  position: absolute;
+  top: 95%;
+}
+
+.footerc > p {
+  width: 100%;
+  padding-top: .5em;
+  clear: both;
+  font-size: .7em;
+  text-align: center;
+  color: darkgrey;
+  position: absolute;
+  top: 128%;
+}
+
+/* NAVIGATION FOR ALL PAGES */
+header, a.logo {           /*THIS IS FOR BEING ABLE TO CLICK ON THE BUSINESS NAME AND GO TO THE HOMEPAGE*/
+  text-align: center;
+  font-size: 2em;
+  font-family: 'Rancho', cursive;
+  text-decoration: none;
+  color: black;
+  padding: 15px 0 35px 0;
+  background-color: #93D8E3;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+
+}
+.containerh {           /*THIS IS FOR THE NAVIGATION BAR*/
+  position: static;
+  text-align: center;
+  font-family: 'Rancho', cursive;
+  color: black;
+  background-color: #93D8E3;
+  padding-top: 50px;
+  padding-bottom: 15px;
+  max-width: 100%;
+
+}
+
+.containerh, nav, ul, li {
+  display: table-cell;
+  margin-left: auto;
+  margin-right: auto;
+  width: 15%;
+  /* margin-right: 0%; */
+  text-align: center;
+  border-collapse: collapse;
+}
+
+.containerh, nav {
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin: auto;
+  float: none;
+}
+
+.containerh, a.page{
+  /* margin-bottom: 0; */
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: none;
+  display: block;
+  color: black;
+  width: auto;
+}
+
+a.page {
+  border-style: double;
+}
+
+.containerh a.page:hover {
+  background-color: #B5EBF4;
+  color: black;
+  border-style: ridge;
+}
+
+/* END OF NAVIGATION */
+/* -------------------------------------------------------------------------------- */
+/* CLASSES.HTML/CLASS SCHEDULE */
+/* Weekdays (Mon-Sun) */
+.weekdays, th {
+  border: 2px solid darkgrey;
+  margin: 0;
+  padding: 10px 0;
+  background: #F2F1F1;
+  font-size: 20px;
+  width: 14%;
+  color: #90837E;
+  text-align: center;
+  text-shadow: 1px 1px darkgrey;
+  font-weight: bold;
+}
+
+/* Classes for certain times of the days of the week */
+table {
+  border-collapse: collapse;
+}
+
+td {
+  padding: 5px;
+  font-size: 1.1em;
+  height: 1.5em;
+  width: 1.5em;
+  text-align: left;
+  color: #EBE1DE;
+  background: #FFFFFF;
+  border-top: none;
+  border-left: 2px solid darkgrey;
+  border-right: 2px solid darkgrey;
+}
+
+h3 {
+  color: #9D9B9D;
+}
+
+.crosstraining, .sprint, .spin, .stepinterval, .act {
+  border-left: 4px solid #0089D0;
+  border-bottom: 2px solid #EBE1DE;
+}
+
+.bodypump, .bodycombat, .zumba {
+  border-left: 4px solid #FF9A00;
+  border-bottom: 2px solid #EBE1DE;
+}
+
+.mfit {
+  border-left: 4px solid #5B74F0;
+  border-bottom: 2px solid #EBE1DE;
+}
+
+.noclasses {
+  background: #F2F1F1;
+  border-bottom: 2px solid #EBE1DE;
+}
+/* END OF CLASSES.HTML/CLASS SCHEDULE */
+/*---------------------------------------------------------------------------*/
+/* This is the style coding for my info page/class registration form. */
+.crfb {
+  /* background-image: url(); */
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: #93D8E3;
+}
+
+.container {
+  margin: auto;
+  width: 65%;
+  background-color: #C4EAF1;
+  padding: 5px 25px 5px 25px;
+  border-radius: 5px;
+  opacity: 85%;
+}
+
+.crfh2 {
+  text-align: center;
+}
+
+/* This is to have the field input's in a column */
+label.clmn {
+  display: block;
+  padding-bottom: 5px;
+  position: relative;
+}
+
+input.clmn {
+  position: absolute;
+  left: 15%;
+  width: 60%;
+}
+
+.submit {
+  width: initial;
+  position: initial;
+}
+
+
+/* End of info page/Class Registration Form */
+/*---------------------------------------------------------------------------*/
+/* THIS IS FOR THE PHOTOS ON THE INFO.HTML/HOME PAGE*/
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align:inherit;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.containerp {
+  margin: auto;
+  width: 50%;
+  /* padding: 5px 25px 5px 25px; */
+  border-radius: 5px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
